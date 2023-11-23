@@ -1,0 +1,129 @@
+/* Write your CSS code here */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 767px) {
+  .app-container {
+    justify-content: flex-start;
+    padding-top: 50px;
+  }
+}
+
+.form-title {
+  color: #ea580c;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+  .form-title {
+    font-size: 36px;
+  }
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 16px;
+  min-height: 310px;
+}
+
+@media screen and (min-width: 768px) {
+  .view-container {
+    max-width: 450px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    padding: 48px 64px;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-label {
+  color: #475569;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  font-family: 'Roboto';
+  margin-bottom: 0;
+}
+
+.name-input-field {
+  font-size: 16px;
+  border: 1px solid #cbd2d9;
+  line-height: 16px;
+  font-weight: 500;
+  color: #9aa5b1;
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 8px 16px;
+  outline: none;
+}
+
+.error-field {
+  border: 1px solid #ff0b37;
+  background-color: #fef2f4;
+}
+
+.error-message {
+  align-self: flex-start;
+  color: #ff0b37;
+  font-size: 12px;
+  font-family: 'Roboto';
+  margin-top: 3px;
+  margin-bottom: 0;
+  line-height: 16px;
+}
+
+.submit-button {
+  color: #ffffff;
+  background-color: #ea580c;
+  font-family: 'Roboto';
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-top: 20px;
+  margin-bottom: 2px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .submit-button {
+    width: 100%;
+  }
+}
+
+.success-image {
+  width: 72px;
+}
+
+.submitted-text {
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Roboto';
+}
